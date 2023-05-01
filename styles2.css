@@ -1,0 +1,93 @@
+.image-group {
+  display: flex;
+  justify-content: center;
+}
+
+.mi-div {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #419542, #ff99cc);
+}
+
+.imagen-principal {
+  width: 300px;
+  height: 200px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+/*animacion movimiento titulo*/
+/*
+.animacion {
+  animation: mover 5s ease-in-out infinite alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}*/
+
+/* desde aqui empieza el codigo para el menu*/
+
+li {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 20px;
+  left: 20px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+}
+
+li:hover {
+  color: #ff0000;
+  transition: 0.4s all ease;
+}
+li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: px;
+  bottom: -5px;
+  left: 0;
+  background-color: #d400ff;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/*efectos para las imgenes*/
+
+img {
+  transition: transform 0.3s ease;
+  border-radius: 30px;
+}
+
+img:hover {
+  transform: scale(1.1);
+  filter: blur(1px);
+  box-shadow: 0px 0px 5px 5px #1e8fec;
+}

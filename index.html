@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <title>Practica 1</title>
+ <meta charset="UTF-8" >
+ <meta name="viewport" content="width=device-width">
+   <link rel="stylesheet" href="styles2.css" id="estilo2"/>
+      <link rel="stylesheet" href="styles.css" id="estilo" />
+
+      <link rel="stylesheet" href="estiloformulario.css" />
+
+      <script type="module" src="script.js"></script>    
+
+   
+  </head>
+
+  <body>
+  
+    <div class="mi-div">
+      <h1 id="texto" class="animacion" style="text-align: center">
+      BLOG DEL DJ
+      </h1>
+    </div>
+
+    <br /><br />
+    <ul class="list">
+      <li>SERATO DJ</li>
+      <li>VIRTUALDJ</li>
+      <li onclick="cambiarEstilos()">CAMBIAR ESTILO</li>
+    </ul>
+
+    <div class="image-group">
+      <div class="polaroid">
+        <img
+          class="imagen-principal"
+          src="https://m.media-amazon.com/images/I/51BGPR4xRGS._SL500_.jpg"
+          alt="Descripción de imagen 1"
+        />
+      </div>
+      <div class="polaroid">
+        <img
+          class="imagen-principal"
+          src="https://i0.wp.com/tiendamusicasa.com/wp-content/uploads/2013/10/pioneer-ddj-sr.jpg"
+          alt="Descripción de imagen 3"
+        />
+      </div>
+    </div>
+    <br />
+    <p>
+      Las controladoras DJ suelen ser el primer paso para todos aquellos que
+      quieren adentrarse en el mundo de los DiscJockey ¿Qué es una controla DJ o
+      una «turntable»? Para entender qué son estos aparatos hay que estudiar la
+      historia del mundo de los DJs: originados con el nacimiento del hip hop en
+      los años 70 fundamentalmente en el Bronx. Fundamentalmente, el género
+      surgía de rapear y cantar encima de piezas de funk y soul que una persona
+      ponía en unos reproductores de vinilos. Evidentemente, no había ni
+      ordenadores ni smartphones, los precursores del género (gente como DJ Kool
+      Herc o Afrika Bambaataa) empezaron a investigar lo que se podía hacer
+      trabajando esos vinilos y comenzaron a utilizar dos pinchadiscos para
+      poder hacer transiciones de una canción a otra de la manera más fluida
+      posible.
+    </p>
+    <br />
+    <br />
+    <p>
+      De la misma manera, descubrieron que se podía alargar la duración de una
+      canción si se ponía el mismo vinilo en los dos reproductores y hacían
+      sonar la parte en cuestión mientras «rebobinaban» el otro vinilo. De la
+      misma manera, el sonido de ese «rebobinado» se quedaría para siempre
+      dentro de la cultura del DJing y muchos artistas después lo aprovecharían
+      para hacer auténticas virguerías. Entonces, teníamos a estos primeros DJs
+      utilizando dos reproductores de vinilo y una mesa de control de sonido que
+      permitía regular los volúmenes de cada uno para poder transicionar de una
+      canción a otra sin que hubiera interrupciones. De esta idea básica es de
+      donde parte lo que hoy en día conocemos como las controladoras dj:
+    </p>
+
+    <br />
+    <p>
+      Si deseas descargar el software que se acomode a tu ncesidad se los
+      enlaces quedan en el menu de la pagina.
+    </p>
+
+    <form id="contact-form" method="post">
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+    
+    
+    <script>
+
+      
+    function cambiarEstilos() {
+      var estilos1 = document.getElementById('estilo');
+      var estilos2 = document.getElementById('estilo2');
+
+      if (estilos1.disabled) {
+        estilos1.disabled = false;
+        estilos2.disabled = true;
+      } else {
+        estilos1.disabled = true;
+        estilos2.disabled = false;
+      }
+    }
+
+    </script>   
+
+    
+  </body>
+</html>
